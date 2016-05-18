@@ -12,6 +12,8 @@ namespace LoginModule
 {
     class DataHandler
     {
+        //usage: 1 insert value: string datainsert = dataInsert.InsertData(table:"UserDetails", where:"name", where2:"NoRule", value: username, value2: "No Value");
+        //usage: 2 insert 2 values:  string datainsert = dataInsert.InsertData(table:"UserDetails", where:"name", where2:"password", value: username, value2: password);
         public string InsertData(string table, string where, string where2, string value, string value2)
         {
             using (SqlConnection connection = new SqlConnection("Data Source=bermdingetje\\sqlexpress;Initial Catalog=LoginModule;Integrated Security=True"))
